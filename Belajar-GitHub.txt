@@ -1,5 +1,5 @@
 Hello World!
 
 I love Dsc
-Public static void 
+Public static 
 System.out.println ("hai hai ");

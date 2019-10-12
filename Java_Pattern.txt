@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Pattern2 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Masukan Angka : ");
+        int a = sc.nextInt();
+        for (int i = 0; i <= a - 1; i++) {
+            for (int j = a - 1; j > i; j--) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k <= i; k++) {
+                System.out.print("+");
+            }
+            System.out.println("");
+        }
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < a; j++) {
+                System.out.print(" ");
+            }
+            for (int k = a - 1; k >= i; k--) {
+                System.out.print("+");
+            }
+            
+            System.out.println("");
+        }
+        System.out.println("Apakah anda ingin mengulangi program lagi? (Y|N) ");
+        String c = sc.next() + sc.nextLine();
+        while (c.equalsIgnoreCase("Y")) {
+            System.out.println("Masukan Angka : ");
+             a = sc.nextInt();
+            for (int i = 0; i <= a - 1; i++) {
+                for (int j = a - 1; j > i; j--) {
+                    System.out.print(" ");
+                }
+                for (int k = 0; k <= i; k++) {
+                    System.out.print("+");
+                }
+                System.out.println("");
+            }
+            for (int i = 0; i < a; i++) {
+                for (int j = 0; j < a; j++) {
+                    System.out.print(" ");
+                }
+                for (int k = a - 1; k >= i; k--) {
+                    System.out.print("+");
+                }
+                System.out.println("");
+            }System.out.println("Apakah anda ingin mengulangi program lagi? (Y|N)");
+            c = sc.next() + sc.nextLine();
+        }
+    }
+}
